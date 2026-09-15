@@ -1,11 +1,7 @@
 import streamlit as st
 
-# Configure the page
-st.set_page_config(
-    page_title="מצפינים",
-    page_icon="",
-    layout="centered"
-)
+# Configure the page ייצוג בדפדפן
+st.set_page_config(page_title="מצפינים",page_icon="",layout="centered)
 
 # Main title
 st.image("images/logo2.png")
@@ -17,15 +13,15 @@ st.image("images/logo2.png")
 
 #------------
 
-# Main text
+#text
 st.markdown(
     """
     <div style="text-align: center; font-size: 20px; line-height: 1.8;">
-        אתר מצפינים נועד להביע תמיכה בצפון ולהכיר מקרוב את כל הדברים היפים שיש לו להציע לנו.
-        מהנופים המיוחדים והמרהיבים, דרך המסעדות ועגלות הקפה המקומיות,
-        ועד לטיולים, מצפים והתנדבויות שמחברות אותנו לאזור ולאנשים שחיים בו.
+        אתר מצפינים נוצר להביע תמיכה בצפון ולהכיר מקרוב את כל הדברים היפים שיש לו להציע לנו.
+        מהנופים היפים , המסעדות ועגלות הקפה שנמצאות שם ,
+        טיולים, מצפים והתנדבויות שמתאימות לאיזור .
         <br><br>
-        בואו איתנו לגלות את הצפון, לתמוך בעסקים המקומיים וליהנות מכל מה שיש לו להציע.
+        בואו איתנו לטייל בצפון ,לתמוך בעסקים המקומיים וליהנות .
     </div>
     """,
     unsafe_allow_html=True
@@ -34,17 +30,17 @@ st.markdown(
 #-----
 st.divider()
 
-# Navigation menu title
+#  menu title
 st.markdown(
     """
     <h2 style="text-align: center; direction: rtl;">
-        לאן תרצו להמשיך?
+        בחרו קטגוריה?
     </h2>
     """,
     unsafe_allow_html=True
 )
 
-# Right-to-left text inside page links
+# Right-to-left text
 st.markdown(
     """
     <style>
@@ -58,7 +54,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Center the navigation links
+# Center links
 left, center, right = st.columns([1, 2, 1])
 
 with center:
