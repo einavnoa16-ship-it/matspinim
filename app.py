@@ -3,15 +3,19 @@ import streamlit as st
 # Configure the page
 st.set_page_config(
     page_title="מצפינים",
-    page_icon="🌿",
+    page_icon="",
     layout="centered"
 )
 
 # Main title
-st.title("מצפינים")
-
+st.image("images/logo2.png")
+#st.title("בואו לצפון")
+#st.image("images/logo2.png")
 # Subtitle
-st.subheader("בואו איתנו לצפון")
+#st.subheader("בואו לצפון")
+
+
+#------------
 
 # Main text
 st.markdown(
@@ -27,13 +31,51 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+#-----
 st.divider()
 
-# Navigation menu
-st.header("לאן תרצו להמשיך?")
+# Navigation menu title
+st.markdown(
+    """
+    <h2 style="text-align: center; direction: rtl;">
+        לאן תרצו להמשיך?
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
 
-# st.page_link("pages/1_restaurants.py", label="☕ מסעדות ועגלות קפה")
-#
-# st.page_link("pages/2_volunteering.py", label="🤝 התנדבויות")
-#
-# st.page_link("pages/3_trips.py", label="🌄 טיולים ומצפים")
+# Right-to-left text inside page links
+st.markdown(
+    """
+    <style>
+    [data-testid="stPageLink"] a {
+        direction: rtl !important;
+        text-align: right !important;
+        justify-content: center !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Center the navigation links
+left, center, right = st.columns([1, 2, 1])
+
+with center:
+    st.page_link(
+        "pages/restaurants.py",
+        label="מסעדות ועגלות קפה",
+        use_container_width=True
+    )
+
+    st.page_link(
+        "pages/volunteering.py",
+        label="התנדבויות",
+        use_container_width=True
+    )
+
+    st.page_link(
+        "pages/trips.py",
+        label="טיולים ומצפים",
+        use_container_width=True
+    )
