@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configure the page ייצוג בדפדפן
-st.set_page_config(page_title="מצפינים",page_icon="",layout="centered)
+st.set_page_config(page_title="מצפינים",page_icon="",layout="centered")
 
 # Main title
 st.image("images/logo2.png")
