@@ -36,5 +36,4 @@ for place in places.keys():
     st.write(f"# {place}")
     image = places[place][0]
     st.image(image, width=200)
-
     st.write(places[place][1])
