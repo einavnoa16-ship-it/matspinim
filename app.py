@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configure the page ייצוג בדפדפן
-st.set_page_config(page_title="מצפינים",page_icon="",layout="centered)
+st.set_page_config(page_title="מצפינים",page_icon="",layout="centered")
 
 # Main title
 st.image("images/logo2.png")
@@ -59,19 +59,29 @@ left, center, right = st.columns([1, 2, 1])
 
 with center:
     st.page_link(
-        "pages/restaurants.py",
-        label="מסעדות ועגלות קפה",
-        use_container_width=True
+         "pages/restaurants.py",
+        icon="🍽",
+         label="מסעדות ועגלות קפה",
+         use_container_width=True
     )
 
     st.page_link(
         "pages/volunteering.py",
+        icon="🧑‍🌾",
         label="התנדבויות",
         use_container_width=True
     )
 
     st.page_link(
         "pages/trips.py",
+        icon="🗺️",
         label="טיולים ומצפים",
         use_container_width=True
     )
+
+    st.page_link(
+             "pages/planner.py",
+            icon="📆",
+             label="תכנן את היום המושלם בצפון!",
+             use_container_width=True
+        )
