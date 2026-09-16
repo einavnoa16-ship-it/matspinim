@@ -81,7 +81,7 @@ with center:
 
     st.page_link(
              "pages/planner.py",
-            icon="📆",
+             icon="📆",
              label="תכנן את היום המושלם בצפון!",
              use_container_width=True
         )
