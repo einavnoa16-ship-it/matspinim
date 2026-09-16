@@ -93,10 +93,16 @@ with center:
              icon="📆",
              label="תכנן את היום המושלם בצפון!",
              use_container_width=True
-        )
+    )
 
     st.page_link(
         "pages/about_us.py",
         label="אודותינו",
         use_container_width=True
     )
+
+    st.page_link(
+        "pages/activities.py",
+        label="אטרקציות",
+        use_container_width=True
+)
