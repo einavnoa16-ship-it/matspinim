@@ -1,4 +1,6 @@
 import streamlit as st
+from subprocess import check_output
+
 st.markdown(
     """
     <style>
@@ -102,3 +104,11 @@ with center:
         label="אטרקציות",
         use_container_width=True
 )
+
+for i in range (20):
+    st.markdown("")
+
+
+if st.button('אם בחרתם חוויה מהאתר שלנו, אתם מוזמנים ללחוץ ממש פה ולהיכנס אל פלייליסט הנסיעה שלכם בספוטיפיי'):
+    file_name = 'https://open.spotify.com/playlist/3f8ThidoZ5UP14eyX0jY77?si=c__dx6QuRl6RmZqAibvq_Q'
+    check_output("start " + file_name, shell=True)
