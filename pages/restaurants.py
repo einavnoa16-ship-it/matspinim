@@ -20,8 +20,7 @@ st.markdown(
     <h2 style="text-align: right; direction: rtl;">
         מסעדות ועגלות קפה 
     </h2>
-    """,
-    unsafe_allow_html=True
+    """,unsafe_allow_html=True
 )
 #st.title('מסעדות ועגלות קפה' )
 
