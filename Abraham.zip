@@ -20,7 +20,7 @@ st.image("images/logo_real.png")
 #text
 st.markdown(
     """
-    <div style="text-align: center; font-size: 20px; line-height: 1.8;>
+    <div style="text-align: center; font-size: 20px; line-height: 1.8; font = ">
         אתר מצפינים נוצר להביע תמיכה בצפון ולהכיר מקרוב את כל הדברים היפים שיש לו להציע לנו.
         מהנופים היפים , המסעדות ועגלות הקפה שנמצאות שם ,
         טיולים, מצפים והתנדבויות שמתאימות לאיזור .
@@ -92,7 +92,6 @@ with center:
 
     st.page_link(
         "pages/about_us.py",
-        icon= "💌",
         label="אודותינו",
         use_container_width=True
     )
