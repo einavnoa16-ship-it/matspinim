@@ -59,19 +59,35 @@ left, center, right = st.columns([1, 2, 1])
 
 with center:
     st.page_link(
-        "pages/restaurants.py",
-        label="מסעדות ועגלות קפה",
-        use_container_width=True
+         "pages/restaurants.py",
+        icon="🍽",
+         label="מסעדות ועגלות קפה",
+         use_container_width=True
     )
 
     st.page_link(
         "pages/volunteering.py",
+        icon="🧑‍🌾",
         label="התנדבויות",
         use_container_width=True
     )
 
     st.page_link(
         "pages/trips.py",
+        icon="🗺️",
         label="טיולים ומצפים",
+        use_container_width=True
+    )
+
+    st.page_link(
+             "pages/planner.py",
+             icon="📆",
+             label="תכנן את היום המושלם בצפון!",
+             use_container_width=True
+        )
+
+    st.page_link(
+        "pages/about_us.py",
+        label="אודותינו",
         use_container_width=True
     )
