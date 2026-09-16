@@ -26,4 +26,5 @@ st.title("בואו לאכול בצפון")
 for place in places.keys():
     image = places[place][0]
     st.image(image, width=200)
+    st.write(f"# {place}")
     st.write(places[place][1])
