@@ -75,3 +75,9 @@ with center:
         label="טיולים ומצפים",
         use_container_width=True
     )
+
+    st.page_link(
+        "pages/about_us.py",
+        label="אודותינו",
+        use_container_width=True
+    )
