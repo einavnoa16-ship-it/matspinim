@@ -13,8 +13,7 @@ st.markdown(
 
 st.markdown(
     """
-    <h2 style="text-align: center; direction: rtl;
-     color: #4a2c11">
+    <h2 style="text-align: center; direction: rtl; color: #4a2c11">
         קצת עלינו
     </h2>
     """,
