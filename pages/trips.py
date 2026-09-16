@@ -10,8 +10,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Page title
-st.title("טיולים ומצפים")
-
+#st.title("טיולים ומצפים")
+st.markdown(
+    """
+    <h2 style="text-align: right; direction: rtl;">
+        טיולים ומצפים 
+    </h2>
+    """,unsafe_allow_html=True
+)
 places = {
     "מצפה בניה (משגב עם)": [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb",

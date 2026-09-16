@@ -10,8 +10,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Page title
-st.title("התנדבויות")
-
+#st.title("התנדבויות")
+st.markdown(
+    """
+    <h2 style="text-align: right; direction: rtl;">
+        התנדבויות 
+    </h2>
+    """,unsafe_allow_html=True
+)
 places = {
     "בישול ארוחה חמה במועדון למען נכי צה''ל": [
       "https://pic1.calcalist.co.il/picserver3/crop_images/2024/06/15/HyY11aXorR/HyY11aXorR_0_0_2000_1125_0_xx-large.jpg",
