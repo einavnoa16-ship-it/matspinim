@@ -1,5 +1,15 @@
 import streamlit as st
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #e6f7ff;  /* Light blue background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Page title
 st.title("מסעדות ועגלות קפה")
 
@@ -23,7 +33,7 @@ places = {
   }
 
 for place in places.keys():
-    st.write(f"# {place}", font=("Ariel", 5))
+    st.write(f"# {place}")
     image = places[place][0]
     st.image(image, width=200)
 

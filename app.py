@@ -1,5 +1,14 @@
 import streamlit as st
-
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #A8F3A8;  /* Light blue background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Configure the page ייצוג בדפדפן
 st.set_page_config(page_title="מצפינים",page_icon="",layout="centered")
 
